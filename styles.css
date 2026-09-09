@@ -1,0 +1,107 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: white;
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding: 0 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS for navigation bar */
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 7%;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  background-color: black;
+  color: white;
+  padding: 0px 0px;
+
+  /* Debug border */
+  /* border: solid red; */
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right: 30px;
+  list-style: none;
+}
+
+.nav-list a:hover {
+  color: darkcyan;
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+  margin: 0 12px;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+/* CSS for page footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin: 20px;
+
+  background-color: #ffffff;
+  padding: 35px;
+  border-radius: 12px;
+  border: 1px solid #e1e8ed;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+.about-text {
+  flex-grow: 1;
+}
+
+.project {
+  gap: 20px;
+  margin: 20px;
+}
+.project img {
+  max-width: 100%;
+  height: auto;
+}
